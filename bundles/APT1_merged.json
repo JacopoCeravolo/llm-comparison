@@ -1,0 +1,93 @@
+{
+    "type": "bundle",
+    "id": "bundle--9e4d2e44-5ed8-4665-9d65-988ba99c1e43",
+    "objects": [
+        {
+            "type": "threat-actor",
+            "id": "threat-actor--9abe0492-ef75-4f02-bfdf-7c4cc4a2e0bd",
+            "name": "APT1",
+            "description": "APT1 is a cyber espionage unit that is reportedly affiliated with the Chinese military. They have systematically stolen confidential data from at least 141 organizations across multiple industries.",
+            "labels": [
+                "APT",
+                "cyber-espionage",
+                "Chinese"
+            ],
+            "created": "2022-09-18T00:00:00Z",
+            "modified": "2022-09-18T00:00:00Z"
+        },
+        {
+            "type": "attack-pattern",
+            "id": "attack-pattern--74ffbe88-1f5e-4002-a704-32c2ce287218",
+            "name": "Internal Reconnaissance",
+            "description": "APT groups utilize custom scripts in order to automate the process of reconnaissance and identification of data of interest.",
+            "labels": [
+                "reconnaissance",
+                "custom scripts"
+            ],
+            "created": "2022-09-18T00:00:00Z",
+            "modified": "2022-09-18T00:00:00Z"
+        },
+        {
+            "type": "attack-pattern",
+            "id": "attack-pattern--71d26be6-0a44-4455-8e22-477a70282ddd",
+            "name": "Lateral Movement",
+            "description": "APT groups leverage compromised user credentials or pass-the-hash tools to gain access to additional computers and devices inside of a victim network.",
+            "labels": [
+                "lateral movement",
+                "compromised credentials"
+            ],
+            "created": "2022-09-18T00:00:00Z",
+            "modified": "2022-09-18T00:00:00Z"
+        },
+        {
+            "type": "attack-pattern",
+            "id": "attack-pattern--998305f5-b278-4b34-b059-1632bd741d97",
+            "name": "Maintain Presence",
+            "description": "APT groups often install new backdoors in the environment during the course of the campaign. They may install different families of malware on multiple computers and use a variety of command and control addresses.",
+            "labels": [
+                "maintain presence",
+                "backdoors",
+                "malware"
+            ],
+            "created": "2022-09-18T00:00:00Z",
+            "modified": "2022-09-18T00:00:00Z"
+        },
+        {
+            "type": "attack-pattern",
+            "id": "attack-pattern--66dcc566-2845-434e-a99e-7e9076b970ad",
+            "name": "Complete Mission",
+            "description": "The main goal of APT intrusions is to steal data, including intellectual property, business contracts or negotiations, policy papers or internal memoranda.",
+            "labels": [
+                "data theft",
+                "intellectual property theft"
+            ],
+            "created": "2022-09-18T00:00:00Z",
+            "modified": "2022-09-18T00:00:00Z"
+        },
+        {
+            "type": "tool",
+            "id": "tool--c98f6aa0-3da5-4a54-9e95-6710ef0828df",
+            "name": "PsExec",
+            "description": "APT groups commonly use compromised credentials with PsExec to execute commands and install malware on remote systems.",
+            "labels": [
+                "command and control",
+                "malware installation"
+            ],
+            "created": "2022-09-18T00:00:00Z",
+            "modified": "2022-09-18T00:00:00Z"
+        },
+        {
+            "type": "malware",
+            "id": "malware--8ad4a292-8b1a-4bcf-8df4-91f118fcd40d",
+            "name": "APT1 Malware",
+            "description": "APT1 uses a variety of malware families to maintain presence, including backdoors and other forms of malicious software.",
+            "is_family": "true",
+            "labels": [
+                "malware",
+                "backdoor"
+            ],
+            "created": "2022-09-18T00:00:00Z",
+            "modified": "2022-09-18T00:00:00Z"
+        }
+    ]
+}

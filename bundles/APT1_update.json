@@ -1,0 +1,131 @@
+{
+    "type": "bundle",
+    "id": "bundle--8fef2243-246d-4cc3-a9f8-a39646cfd7c1",
+    "objects": [
+        {
+            "type": "threat-actor",
+            "id": "threat-actor--1d27b88f-885e-4b3e-ad6b-251dc9ce916c",
+            "name": "Unit 61398",
+            "description": "Unit 61398, also known as APT1, is a Chinese state-sponsored cyber espionage actor. Our research indicates that the Communist Party of China (CPC) is tasking the Chinese People\u2019s Liberation Army (PLA) to commit systematic cyber espionage and data theft against organizations around the world. Mandiant report indicates that APT1 is likely government-sponsored and one of the most persistent of China\u2019s cyber threat actors, and they believe that APT1 is able to wage such a long-running and extensive cyber espionage campaign in large part because it receives direct government support.",
+            "labels": [
+                "state-sponsored",
+                "cyber-espionage",
+                "Chinese",
+                "APT1"
+            ],
+            "created": "2022-06-01T00:00:00Z",
+            "modified": "2022-06-01T00:00:00Z"
+        },
+        {
+            "type": "location",
+            "id": "location--30ca3b0d-32bd-4342-b8f5-0067ddffd644",
+            "name": "Pudong New Area of Shanghai",
+            "description": "The location of Unit 61398's new building completed by Jiangsu Longhai Construction Engineering Group in early 2007. The building is located at Datong Road 208 within the Pudong New Area of Shanghai. Mandiant report traced APT1\u2019s activity to four large networks in Shanghai, two of which serve the Pudong New Area where Unit 61398 is based.",
+            "created": "2022-06-01T00:00:00Z",
+            "modified": "2022-06-01T00:00:00Z"
+        },
+        {
+            "type": "identity",
+            "id": "identity--716a6ebb-cdc7-4a64-8a1e-3802143d3b23",
+            "name": "Li Bingbing",
+            "description": "A graduate student of covert communications, Li Bingbing, has openly acknowledged his affiliation with Unit 61398. He published a paper in 2010 that discussed embedding covert communications within Microsoft\u00ae Word documents.",
+            "created": "2022-06-01T00:00:00Z",
+            "modified": "2022-06-01T00:00:00Z"
+        },
+        {
+            "type": "identity",
+            "id": "identity--cbb29665-914a-4f78-b4d1-3e7f2b677893",
+            "name": "Wang Weizhong",
+            "description": "An English linguist, Wang Weizhong, has described the training he received as an English linguist while assigned to Unit 61398.",
+            "created": "2022-06-01T00:00:00Z",
+            "modified": "2022-06-01T00:00:00Z"
+        },
+        {
+            "type": "identity",
+            "id": "identity--238546b6-725f-4d71-90cf-59862dfd91b3",
+            "name": "Yu Yunxiang",
+            "description": "Yu Yunxiang is an expert in operating system internals and references Unit 61398 as the source of his expertise on the topic.",
+            "created": "2022-06-01T00:00:00Z",
+            "modified": "2022-06-01T00:00:00Z"
+        },
+        {
+            "type": "identity",
+            "id": "identity--5cf3225e-1c00-4b6b-82d4-1b6763d22d19",
+            "name": "Peng Fei",
+            "description": "Peng Fei is an expert in digital signal processing and references Unit 61398 as the source of his expertise on the topic.",
+            "created": "2022-06-01T00:00:00Z",
+            "modified": "2022-06-01T00:00:00Z"
+        },
+        {
+            "type": "identity",
+            "id": "identity--c0426913-d645-4c40-87fa-bd74ed5d90a2",
+            "name": "Chen Yiqun",
+            "description": "Chen Yiqun is an expert in network security and references Unit 61398 as the source of his expertise on the topic.",
+            "created": "2022-06-01T00:00:00Z",
+            "modified": "2022-06-01T00:00:00Z"
+        },
+        {
+            "type": "intrusion-set",
+            "id": "intrusion-set--3a0af2d6-e166-43fc-9a14-c1bcfc0fd522",
+            "name": "Unit 61398 Operations",
+            "description": "Unit 61398's operations involve systematic cyber espionage and data theft against organizations around the world, particularly those where English is the primary language. The group aggressively recruits new talent from the Science and Engineering departments of universities for their operations. According to Mandiant report, APT1 has systematically stolen hundreds of terabytes of data from at least 141 organizations, demonstrating the capability and intent to steal from dozens of organizations simultaneously. APT1 has a well-defined attack methodology, honed over years and designed to steal large volumes of valuable intellectual property.",
+            "labels": [
+                "intrusion-set",
+                "Unit 61398",
+                "APT1"
+            ],
+            "created": "2022-06-01T00:00:00Z",
+            "modified": "2022-06-01T00:00:00Z"
+        },
+        {
+            "type": "identity",
+            "id": "identity--3b6af957-ffa6-4854-8940-b9140c1d2ce3",
+            "name": "UglyGorilla",
+            "description": "The first persona, \u201cUglyGorilla\u201d, has been active in computer network operations since October 2004. His activities include registering domains attributed to APT1 and authoring malware used in APT1 campaigns. \u201cUglyGorilla\u201d publicly expressed his interest in China\u2019s \u201ccyber troops\u201d in January 2004.",
+            "created": "2022-06-01T00:00:00Z",
+            "modified": "2022-06-01T00:00:00Z"
+        },
+        {
+            "type": "identity",
+            "id": "identity--be8f515d-34fd-4d0d-9402-c437f518e548",
+            "name": "DOTA",
+            "description": "The second persona, an actor we call \u201cDOTA\u201d, has registered dozens of email accounts used to conduct social engineering and spear phishing attacks in support of APT1 campaigns. \u201cDOTA\u201d used a Shanghai phone number while registering these accounts.",
+            "created": "2022-06-01T00:00:00Z",
+            "modified": "2022-06-01T00:00:00Z"
+        },
+        {
+            "type": "identity",
+            "id": "identity--d31f767b-4ee2-429b-b18c-96d196484f8f",
+            "name": "SuperHard",
+            "description": "The third persona, who uses the nickname \u201cSuperHard,\u201d is the creator or a significant contributor to the AURIGA and BANGAT malware families which we have observed APT1 and other APT groups use. \u201cSuperHard\u201d discloses his location to be the Pudong New Area of Shanghai.",
+            "created": "2022-06-01T00:00:00Z",
+            "modified": "2022-06-01T00:00:00Z"
+        },
+        {
+            "type": "malware",
+            "id": "malware--8a462f11-9442-46f3-96df-53714736947e",
+            "name": "AURIGA",
+            "description": "AURIGA is a malware family which we have observed APT1 and other APT groups use. It was created or significantly contributed to by a persona associated with APT1 activity, known as \u201cSuperHard\u201d.",
+            "is_family": "true",
+            "labels": [
+                "malware",
+                "APT1"
+            ],
+            "created": "2022-06-01T00:00:00Z",
+            "modified": "2022-06-01T00:00:00Z"
+        },
+        {
+            "type": "malware",
+            "id": "malware--1d8237b6-0ba1-47e3-8df9-10fb46d69e83",
+            "name": "BANGAT",
+            "description": "BANGAT is a malware family which we have observed APT1 and other APT groups use. It was created or significantly contributed to by a persona associated with APT1 activity, known as \u201cSuperHard\u201d.",
+            "is_family": "true",
+            "labels": [
+                "malware",
+                "APT1"
+            ],
+            "created": "2022-06-01T00:00:00Z",
+            "modified": "2022-06-01T00:00:00Z"
+        }
+    ]
+}

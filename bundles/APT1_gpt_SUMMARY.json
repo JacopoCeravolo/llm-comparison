@@ -1,0 +1,196 @@
+{
+    "type": "bundle",
+    "id": "bundle--e297178c-dd04-460e-b060-76dc292f18cc",
+    "objects": [
+        {
+            "type": "threat-actor",
+            "id": "threat-actor--747689e5-44bf-404c-957e-5270e3e4545d",
+            "name": "APT19",
+            "description": "APT19 is a Chinese-based threat group that has targeted a variety of industries, including defense, finance, energy, pharmaceutical, telecommunications, high tech, education, manufacturing, and legal services.",
+            "labels": [
+                "APT",
+                "China",
+                "industry-targeted"
+            ],
+            "created": "2022-10-04T00:00:00Z",
+            "modified": "2022-10-04T00:00:00Z"
+        },
+        {
+            "type": "campaign",
+            "id": "campaign--c1ca70b3-64c0-492d-80eb-91a4393d88fc",
+            "name": "APT19 2017 Phishing Campaign",
+            "description": "In 2017, a phishing campaign was used to target seven law and investment firms.",
+            "labels": [
+                "phishing",
+                "law-and-investment-targeted"
+            ],
+            "created": "2022-10-04T00:00:00Z",
+            "modified": "2022-10-04T00:00:00Z"
+        },
+        {
+            "type": "malware",
+            "id": "malware--83d5d876-9365-4103-b22a-2fcb50f952f6",
+            "name": "APT19 HTTP Malware Variant",
+            "description": "APT19 used an HTTP malware variant to communicate over HTTP for C2. It establishes persistence by setting the Registry key HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run\\Windows Debug Tools-%LOCALAPPDATA%\\.",
+            "is_family": "true",
+            "labels": [
+                "HTTP",
+                "C2",
+                "persistence"
+            ],
+            "created": "2022-10-04T00:00:00Z",
+            "modified": "2022-10-04T00:00:00Z"
+        },
+        {
+            "type": "malware",
+            "id": "malware--59c04117-9335-4840-9d2e-34fa1aeb0aa7",
+            "name": "APT19 Port 22 Malware Variant",
+            "description": "APT19's Port 22 malware variant registers itself as a service. It is used to modify several Registry keys.",
+            "is_family": "true",
+            "labels": [
+                "Port 22",
+                "service-registration",
+                "registry-modification"
+            ],
+            "created": "2022-10-04T00:00:00Z",
+            "modified": "2022-10-04T00:00:00Z"
+        },
+        {
+            "type": "software",
+            "id": "software--19168752-8c21-4e0c-8f19-2cd37dc8e76d",
+            "name": "HTTP malware variant",
+            "vendor": "APT19"
+        },
+        {
+            "type": "software",
+            "id": "software--2febadb9-7503-4f88-8f85-579a46f259b5",
+            "name": "Port 22 malware variant",
+            "vendor": "APT19"
+        },
+        {
+            "type": "process",
+            "id": "process--bef296e5-e6a1-4e7e-b266-e2789cdc829e",
+            "name": "PowerShell",
+            "command_line": "-W Hidden"
+        },
+        {
+            "type": "windows-registry-key",
+            "id": "windows-registry-key--7cd88246-db20-4118-9d8a-491d71ebd709",
+            "key": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run\\Windows Debug Tools-%LOCALAPPDATA%\\"
+        },
+        {
+            "type": "file",
+            "id": "file--bd0f76a5-a326-4cf0-b5b8-e73f1c169359",
+            "name": "rundll32.exe",
+            "parent_directory_ref": "directory--17c8fe4c-9bb1-451c-8f2a-d3e5f54962be"
+        },
+        {
+            "type": "domain-name",
+            "id": "domain-name--ff14d6d7-4462-447f-9253-333cab8c8bce",
+            "value": "forbes.com"
+        },
+        {
+            "type": "file",
+            "id": "file--fc8cc8e9-1947-4f5f-a483-0e73ca420f1a",
+            "name": "malicious RTF",
+            "hashes": {
+                "SHA-256": "5d4a8468ece03797352d4dac5b542a673a8e8ef76a6d5a2c5a31f2a49a648119"
+            }
+        },
+        {
+            "type": "file",
+            "id": "file--ed44c9a2-5ae7-4886-be1b-07d881e1675b",
+            "name": "malicious XLSM",
+            "hashes": {
+                "SHA-256": "5d4a8468ece03797352d4dac5b542a673a8e8ef76a6d5a2c5a31f2a49a648119"
+            }
+        },
+        {
+            "type": "software",
+            "id": "software--96fc6900-7977-44cf-9053-d7a55abfe452",
+            "name": "Empire",
+            "vendor": "public"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--31362078-138f-407c-9f6d-3becd6b7cc50",
+            "relationship_type": "uses",
+            "source_ref": "threat-actor--747689e5-44bf-404c-957e-5270e3e4545d",
+            "target_ref": "campaign--c1ca70b3-64c0-492d-80eb-91a4393d88fc",
+            "created": "2022-10-04T00:00:00Z",
+            "modified": "2022-10-04T00:00:00Z"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--f30864cd-50e7-4441-907d-38e65e1ccb63",
+            "relationship_type": "uses",
+            "source_ref": "threat-actor--747689e5-44bf-404c-957e-5270e3e4545d",
+            "target_ref": "malware--83d5d876-9365-4103-b22a-2fcb50f952f6",
+            "created": "2022-10-04T00:00:00Z",
+            "modified": "2022-10-04T00:00:00Z"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--c5aa4d08-7ffa-4fb1-b361-2f4071eba393",
+            "relationship_type": "uses",
+            "source_ref": "threat-actor--747689e5-44bf-404c-957e-5270e3e4545d",
+            "target_ref": "malware--59c04117-9335-4840-9d2e-34fa1aeb0aa7",
+            "created": "2022-10-04T00:00:00Z",
+            "modified": "2022-10-04T00:00:00Z"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--e60bed29-176a-43a6-a8be-a76fc5c86ace",
+            "relationship_type": "uses",
+            "source_ref": "malware--83d5d876-9365-4103-b22a-2fcb50f952f6",
+            "target_ref": "windows-registry-key--7cd88246-db20-4118-9d8a-491d71ebd709",
+            "created": "2022-10-04T00:00:00Z",
+            "modified": "2022-10-04T00:00:00Z"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--612511b9-5216-49ef-8f00-1c7726f6e121",
+            "relationship_type": "uses",
+            "source_ref": "malware--59c04117-9335-4840-9d2e-34fa1aeb0aa7",
+            "target_ref": "file--bd0f76a5-a326-4cf0-b5b8-e73f1c169359",
+            "created": "2022-10-04T00:00:00Z",
+            "modified": "2022-10-04T00:00:00Z"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--3711fb24-6cf4-4fdd-a03f-ed01e894e2d3",
+            "relationship_type": "uses",
+            "source_ref": "threat-actor--747689e5-44bf-404c-957e-5270e3e4545d",
+            "target_ref": "domain-name--ff14d6d7-4462-447f-9253-333cab8c8bce",
+            "created": "2022-10-04T00:00:00Z",
+            "modified": "2022-10-04T00:00:00Z"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--bf828349-e0bf-4be4-a26c-ecac6f7aaf34",
+            "relationship_type": "uses",
+            "source_ref": "threat-actor--747689e5-44bf-404c-957e-5270e3e4545d",
+            "target_ref": "file--fc8cc8e9-1947-4f5f-a483-0e73ca420f1a",
+            "created": "2022-10-04T00:00:00Z",
+            "modified": "2022-10-04T00:00:00Z"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--232114fb-eaaa-41bf-b7a9-d1377cb238d2",
+            "relationship_type": "uses",
+            "source_ref": "threat-actor--747689e5-44bf-404c-957e-5270e3e4545d",
+            "target_ref": "file--ed44c9a2-5ae7-4886-be1b-07d881e1675b",
+            "created": "2022-10-04T00:00:00Z",
+            "modified": "2022-10-04T00:00:00Z"
+        },
+        {
+            "type": "relationship",
+            "id": "relationship--d3597bd3-5822-45cf-b687-7241dc621b0d",
+            "relationship_type": "uses",
+            "source_ref": "threat-actor--747689e5-44bf-404c-957e-5270e3e4545d",
+            "target_ref": "software--96fc6900-7977-44cf-9053-d7a55abfe452",
+            "created": "2022-10-04T00:00:00Z",
+            "modified": "2022-10-04T00:00:00Z"
+        }
+    ]
+}
